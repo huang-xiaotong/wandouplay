@@ -7,7 +7,7 @@
 //
 
 #import "JmFavouritesViewController.h"
-
+#import "JmSettingViewController.h"
 @interface JmFavouritesViewController ()
 
 @end
@@ -27,32 +27,23 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    navigationBar = [[UINavigationBar alloc]init];
-    navigationBar.frame = CGRectMake(0, 0, 320, 60);
-    navigationBar.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:navigationBar];
-    [self creatButton];
-    [self creatLabel];
+    self.title = @"我的视频";
+    [self creatLeftAndRightButton];
     // Do any additional setup after loading the view.
 }
--(UILabel *)creatLabel
+-(void)creatLeftAndRightButton
 {
-    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(110, 30, 100, 20)];
-    titleLabel.text = @"我的视频";
-    titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.font = [UIFont systemFontOfSize:16];
-    [navigationBar addSubview:titleLabel];
-    return titleLabel;
+    UIBarButtonItem *backbutton = [[UIBarButtonItem alloc]initWithTitle:@"🔙" style:UIBarButtonItemStyleDone target:self action:@selector(pressBackButton:)];
+    self.navigationItem.leftBarButtonItem = backbutton;
+    UIBarButtonItem *setButton = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStyleDone target:self action:@selector(pressSetButton:)];
+    self.navigationItem.rightBarButtonItem = setButton;
 }
--(UIButton *)creatButton
+-(void)pressSetButton:(id)sender
 {
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(10, 30, 40, 20)];
-    button.backgroundColor = [UIColor blueColor];
-    [button addTarget:self action:@selector(pressButton:) forControlEvents:UIControlEventTouchUpInside];
-    [navigationBar addSubview:button];
-    return button;
+    JmSettingViewController *settingViewController = [[JmSettingViewController alloc]init];
+    [self.navigationController pushViewController:settingViewController animated:YES];
 }
--(void)pressButton:(id)sender
+-(void)pressBackButton:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

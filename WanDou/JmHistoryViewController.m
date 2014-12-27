@@ -7,7 +7,7 @@
 //
 
 #import "JmHistoryViewController.h"
-
+#define scrollView_y 100
 @interface JmHistoryViewController ()
 
 @end
@@ -31,7 +31,8 @@
     navigationBar.frame = CGRectMake(0, 0, 320, 60);
     navigationBar.backgroundColor = [UIColor greenColor];
     [self.view addSubview:navigationBar];
-    [self creatButton];
+    [self creatLeftButton];
+    [self creatRightButton];
     [self creatLabel];
     // Do any additional setup after loading the view.
 }
@@ -44,24 +45,36 @@
     [navigationBar addSubview:titleLabel];
     return titleLabel;
 }
--(UIButton *)creatButton
+-(UIButton *)creatLeftButton
 {
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(10, 30, 40, 20)];
-    button.backgroundColor = [UIColor blueColor];
-    [button addTarget:self action:@selector(pressButton:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"返回" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(pressleftButton:) forControlEvents:UIControlEventTouchUpInside];
     [navigationBar addSubview:button];
     return button;
 }
--(void)pressButton:(id)sender
+-(UIButton *)creatRightButton
+{
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(260, 30, 40, 20)];
+    [button setTitle:@"清空" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(pressrightButton:) forControlEvents:UIControlEventTouchUpInside];
+    [navigationBar addSubview:button];
+    return button;
+}
+-(void)pressleftButton:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)pressrightButton:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"确定清空吗？" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
 }
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 

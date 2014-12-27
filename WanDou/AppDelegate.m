@@ -8,15 +8,33 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "JmHistoryViewController.h"
+#import "JmTVViewController.h"
+#import "JmVarietyViewController.h"
+#import "JmAnimationViewController.h"
+#import "JmMovieViewController.h"
+#import "JmFavouritesViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     ViewController *viewCtrl = [[ViewController alloc]init];
-    UINavigationController *navCtrl = [[UINavigationController alloc]initWithRootViewController:viewCtrl];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:59.0/255 green:220.0/255 blue:76.0/255 alpha:1]];
-    self.window.rootViewController = navCtrl;
+    JmAnimationViewController *animationCtrl = [[JmAnimationViewController alloc]init];
+    JmMovieViewController *movieCtrl = [[JmMovieViewController alloc]init];
+    JmTVViewController *TVCtrl = [[JmTVViewController alloc]init];
+    JmVarietyViewController *varietyCtrl = [[JmVarietyViewController alloc]init];
+    UITabBarController *tabBarCtrl = [[UITabBarController alloc]init];
+    tabBarCtrl.viewControllers = [NSArray arrayWithObjects:viewCtrl, TVCtrl, movieCtrl, animationCtrl, varietyCtrl, nil];
+    UITabBarItem *viewCtrlItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:nil selectedImage:nil];
+    viewCtrl.tabBarItem = viewCtrlItem;
+    UITabBarItem *TVCtrlItem = [[UITabBarItem alloc]initWithTitle:@"电视剧" image:nil selectedImage:nil];
+    TVCtrl.tabBarItem = TVCtrlItem;
+    UITabBarItem *movieCtrlItem = [[UITabBarItem alloc]initWithTitle:@"电影" image:nil selectedImage:nil];
+    movieCtrl.tabBarItem = movieCtrlItem;
+    UITabBarItem *animationCtrlItem = [[UITabBarItem alloc]initWithTitle:@"动漫" image:nil selectedImage:nil];
+    animationCtrl.tabBarItem = animationCtrlItem;
+    UITabBarItem *varietyCtrlItem = [[UITabBarItem alloc]initWithTitle:@"综艺" image:nil selectedImage:nil];
+    varietyCtrl.tabBarItem = varietyCtrlItem;
+    self.window.rootViewController = tabBarCtrl;
     // Override point for customization after application launch.
     return YES;
 }

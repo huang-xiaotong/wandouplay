@@ -7,19 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JmNavigationBar.h"
+#import "JmHomePage.h"
+#import "SGFocusImageFrame.h"
 #define ViewNumber 3
 @interface ViewController : UIViewController
-<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UICollectionViewDelegateFlowLayout>
+<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,SGFocusImageFrameDelegate>
 {
-    UICollectionView *m_collectionView;
-    UITableView *m_tableView;
-    UIScrollView *m_scrollView;
-    UISearchBar *m_searchBar;
-    UIButton *leftButton;
-    UIButton *rightButton;
-    UIView *m_homePage;
+    JmNavigationBar *navigationBar;
+//    UICollectionView *m_collectionView;
+//    UITableView *m_tableView;
+//    UIScrollView *m_scrollView;
+    JmHomePage *homePage;
 }
-    @property(nonatomic ,strong) UIButton * btn1;
-    @property(nonatomic ,strong) UIButton * btn2;
-    @property(nonatomic ,strong) UIScrollView * tabbarScrollView;
+@property(nonatomic ,strong) UIScrollView * tabbarScrollView;
 @end

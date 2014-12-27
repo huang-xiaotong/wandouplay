@@ -21,11 +21,33 @@
 		9A1E3CC41A2852DF00C3C4CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1E3CA61A2852DE00C3C4CF /* UIKit.framework */; };
 		9A1E3CCC1A2852DF00C3C4CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E3CCA1A2852DF00C3C4CF /* InfoPlist.strings */; };
 		9A1E3CCE1A2852DF00C3C4CF /* WanDouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E3CCD1A2852DF00C3C4CF /* WanDouTests.m */; };
-		9A67C3351A29668700C1B074 /* TablebarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67C3341A29668700C1B074 /* TablebarView.m */; };
+		9A2DB1771A3EB04200923C04 /* JmSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DB1761A3EB04200923C04 /* JmSettingViewController.m */; };
+		9A2DB17A1A3EC20800923C04 /* JmTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DB1791A3EC20800923C04 /* JmTVViewController.m */; };
+		9A2DB17D1A3EC22900923C04 /* JmMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DB17C1A3EC22900923C04 /* JmMovieViewController.m */; };
+		9A2DB1801A3EC27000923C04 /* JmAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DB17F1A3EC27000923C04 /* JmAnimationViewController.m */; };
+		9A2DB1831A3EC28800923C04 /* JmVarietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DB1821A3EC28800923C04 /* JmVarietyViewController.m */; };
+		9A3799361A41883500FDAA67 /* JmTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3799351A41883500FDAA67 /* JmTV.m */; };
+		9A44AEC81A42C35E0096D0FC /* JmMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44AEC71A42C35E0096D0FC /* JmMovie.m */; };
+		9A44AECB1A42C3A10096D0FC /* JmAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44AECA1A42C3A10096D0FC /* JmAnimation.m */; };
+		9A44AECE1A42C3BB0096D0FC /* JmVariety.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44AECD1A42C3BB0096D0FC /* JmVariety.m */; };
+		9A4E3EFB1A3EDDA300172645 /* JmNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E3EFA1A3EDDA300172645 /* JmNavigationBar.m */; };
+		9A5ED7A71A3AD3A80054E149 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A5ED7A41A3AD3A80054E149 /* image1.jpg */; };
+		9A5ED7A81A3AD3A80054E149 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A5ED7A51A3AD3A80054E149 /* image2.jpg */; };
+		9A5ED7A91A3AD3A80054E149 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A5ED7A61A3AD3A80054E149 /* image3.jpg */; };
+		9A67C3351A29668700C1B074 /* JmHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67C3341A29668700C1B074 /* JmHomePage.m */; };
+		9A6CAA8D1A36CEB70048043F /* RecipeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CAA8C1A36CEB70048043F /* RecipeCollectionHeaderView.m */; };
+		9A7223301A46721800DA1B6C /* JmSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A72232F1A46721800DA1B6C /* JmSetting.m */; };
 		9ACB27F51A31AC1C00E93A23 /* JmHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB27F41A31AC1B00E93A23 /* JmHistoryViewController.m */; };
 		9ACB27F81A31B68700E93A23 /* JmFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB27F71A31B68700E93A23 /* JmFavouritesViewController.m */; };
-		9ADF12F41A329DBE0047AF52 /* HomePageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF12F31A329DBE0047AF52 /* HomePageScrollView.m */; };
-		9ADF12F71A32A5000047AF52 /* HomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF12F61A32A5000047AF52 /* HomePage.m */; };
+		9AE866051A47FF4A004D88EE /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE866041A47FF4A004D88EE /* SGFocusImageFrame.m */; };
+		9AE8660A1A480136004D88EE /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE866061A480136004D88EE /* banner1.png */; };
+		9AE8660B1A480136004D88EE /* banner2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE866071A480136004D88EE /* banner2.png */; };
+		9AE8660C1A480136004D88EE /* banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE866081A480136004D88EE /* banner3.png */; };
+		9AE8660D1A480136004D88EE /* banner4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE866091A480136004D88EE /* banner4.png */; };
+		9AE866121A480148004D88EE /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8660E1A480148004D88EE /* photo1.jpg */; };
+		9AE866131A480148004D88EE /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8660F1A480148004D88EE /* photo2.jpg */; };
+		9AE866141A480148004D88EE /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE866101A480148004D88EE /* photo3.jpg */; };
+		9AE866151A480148004D88EE /* photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AE866111A480148004D88EE /* photo4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,16 +80,49 @@
 		9A1E3CC91A2852DF00C3C4CF /* WanDouTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WanDouTests-Info.plist"; sourceTree = "<group>"; };
 		9A1E3CCB1A2852DF00C3C4CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A1E3CCD1A2852DF00C3C4CF /* WanDouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WanDouTests.m; sourceTree = "<group>"; };
-		9A67C3331A29668700C1B074 /* TablebarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablebarView.h; sourceTree = "<group>"; };
-		9A67C3341A29668700C1B074 /* TablebarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablebarView.m; sourceTree = "<group>"; };
+		9A2DB1751A3EB04200923C04 /* JmSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmSettingViewController.h; sourceTree = "<group>"; };
+		9A2DB1761A3EB04200923C04 /* JmSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmSettingViewController.m; sourceTree = "<group>"; };
+		9A2DB1781A3EC20700923C04 /* JmTVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmTVViewController.h; sourceTree = "<group>"; };
+		9A2DB1791A3EC20800923C04 /* JmTVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmTVViewController.m; sourceTree = "<group>"; };
+		9A2DB17B1A3EC22900923C04 /* JmMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmMovieViewController.h; sourceTree = "<group>"; };
+		9A2DB17C1A3EC22900923C04 /* JmMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmMovieViewController.m; sourceTree = "<group>"; };
+		9A2DB17E1A3EC27000923C04 /* JmAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmAnimationViewController.h; sourceTree = "<group>"; };
+		9A2DB17F1A3EC27000923C04 /* JmAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmAnimationViewController.m; sourceTree = "<group>"; };
+		9A2DB1811A3EC28800923C04 /* JmVarietyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmVarietyViewController.h; sourceTree = "<group>"; };
+		9A2DB1821A3EC28800923C04 /* JmVarietyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmVarietyViewController.m; sourceTree = "<group>"; };
+		9A3799341A41883500FDAA67 /* JmTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmTV.h; sourceTree = "<group>"; };
+		9A3799351A41883500FDAA67 /* JmTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmTV.m; sourceTree = "<group>"; };
+		9A44AEC61A42C35E0096D0FC /* JmMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmMovie.h; sourceTree = "<group>"; };
+		9A44AEC71A42C35E0096D0FC /* JmMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmMovie.m; sourceTree = "<group>"; };
+		9A44AEC91A42C3A10096D0FC /* JmAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmAnimation.h; sourceTree = "<group>"; };
+		9A44AECA1A42C3A10096D0FC /* JmAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmAnimation.m; sourceTree = "<group>"; };
+		9A44AECC1A42C3BB0096D0FC /* JmVariety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmVariety.h; sourceTree = "<group>"; };
+		9A44AECD1A42C3BB0096D0FC /* JmVariety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmVariety.m; sourceTree = "<group>"; };
+		9A4E3EF91A3EDDA300172645 /* JmNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmNavigationBar.h; sourceTree = "<group>"; };
+		9A4E3EFA1A3EDDA300172645 /* JmNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmNavigationBar.m; sourceTree = "<group>"; };
+		9A5ED7A41A3AD3A80054E149 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = "../../图片/image1.jpg"; sourceTree = "<group>"; };
+		9A5ED7A51A3AD3A80054E149 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = "../../图片/image2.jpg"; sourceTree = "<group>"; };
+		9A5ED7A61A3AD3A80054E149 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = "../../图片/image3.jpg"; sourceTree = "<group>"; };
+		9A67C3331A29668700C1B074 /* JmHomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmHomePage.h; sourceTree = "<group>"; };
+		9A67C3341A29668700C1B074 /* JmHomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmHomePage.m; sourceTree = "<group>"; };
+		9A6CAA8B1A36CEB60048043F /* RecipeCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeCollectionHeaderView.h; sourceTree = "<group>"; };
+		9A6CAA8C1A36CEB70048043F /* RecipeCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeCollectionHeaderView.m; sourceTree = "<group>"; };
+		9A72232E1A46721800DA1B6C /* JmSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmSetting.h; sourceTree = "<group>"; };
+		9A72232F1A46721800DA1B6C /* JmSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmSetting.m; sourceTree = "<group>"; };
 		9ACB27F31A31AC1900E93A23 /* JmHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmHistoryViewController.h; sourceTree = "<group>"; };
 		9ACB27F41A31AC1B00E93A23 /* JmHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmHistoryViewController.m; sourceTree = "<group>"; };
 		9ACB27F61A31B68600E93A23 /* JmFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JmFavouritesViewController.h; sourceTree = "<group>"; };
 		9ACB27F71A31B68700E93A23 /* JmFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JmFavouritesViewController.m; sourceTree = "<group>"; };
-		9ADF12F21A329DBE0047AF52 /* HomePageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageScrollView.h; sourceTree = "<group>"; };
-		9ADF12F31A329DBE0047AF52 /* HomePageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageScrollView.m; sourceTree = "<group>"; };
-		9ADF12F51A32A5000047AF52 /* HomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePage.h; sourceTree = "<group>"; };
-		9ADF12F61A32A5000047AF52 /* HomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePage.m; sourceTree = "<group>"; };
+		9AE866031A47FF4A004D88EE /* SGFocusImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGFocusImageFrame.h; path = "../../SGFocusImageFrame-master/SGFocusImageFrame/SGFocusImageFrame.h"; sourceTree = "<group>"; };
+		9AE866041A47FF4A004D88EE /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGFocusImageFrame.m; path = "../../SGFocusImageFrame-master/SGFocusImageFrame/SGFocusImageFrame.m"; sourceTree = "<group>"; };
+		9AE866061A480136004D88EE /* banner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banner1.png; path = "../../SGFocusImageFrame-master/Demo/Images/banner1.png"; sourceTree = "<group>"; };
+		9AE866071A480136004D88EE /* banner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banner2.png; path = "../../SGFocusImageFrame-master/Demo/Images/banner2.png"; sourceTree = "<group>"; };
+		9AE866081A480136004D88EE /* banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banner3.png; path = "../../SGFocusImageFrame-master/Demo/Images/banner3.png"; sourceTree = "<group>"; };
+		9AE866091A480136004D88EE /* banner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banner4.png; path = "../../SGFocusImageFrame-master/Demo/Images/banner4.png"; sourceTree = "<group>"; };
+		9AE8660E1A480148004D88EE /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo1.jpg; path = "../../SGFocusImageFrame-master/Demo/Images/photo1.jpg"; sourceTree = "<group>"; };
+		9AE8660F1A480148004D88EE /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo2.jpg; path = "../../SGFocusImageFrame-master/Demo/Images/photo2.jpg"; sourceTree = "<group>"; };
+		9AE866101A480148004D88EE /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo3.jpg; path = "../../SGFocusImageFrame-master/Demo/Images/photo3.jpg"; sourceTree = "<group>"; };
+		9AE866111A480148004D88EE /* photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo4.jpg; path = "../../SGFocusImageFrame-master/Demo/Images/photo4.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +182,10 @@
 		9A1E3CA81A2852DE00C3C4CF /* WanDou */ = {
 			isa = PBXGroup;
 			children = (
+				9AE866021A47FEF8004D88EE /* uiscrollview */,
+				9A5ED7A41A3AD3A80054E149 /* image1.jpg */,
+				9A5ED7A51A3AD3A80054E149 /* image2.jpg */,
+				9A5ED7A61A3AD3A80054E149 /* image3.jpg */,
 				9A3E4DE91A31E3C800BB4F68 /* ViewController */,
 				9A3E4DE81A31E39B00BB4F68 /* appDelegate */,
 				9A3E4DEA1A31E3FA00BB4F68 /* uiview */,
@@ -184,6 +243,16 @@
 				9ACB27F41A31AC1B00E93A23 /* JmHistoryViewController.m */,
 				9ACB27F61A31B68600E93A23 /* JmFavouritesViewController.h */,
 				9ACB27F71A31B68700E93A23 /* JmFavouritesViewController.m */,
+				9A2DB1751A3EB04200923C04 /* JmSettingViewController.h */,
+				9A2DB1761A3EB04200923C04 /* JmSettingViewController.m */,
+				9A2DB1781A3EC20700923C04 /* JmTVViewController.h */,
+				9A2DB1791A3EC20800923C04 /* JmTVViewController.m */,
+				9A2DB17B1A3EC22900923C04 /* JmMovieViewController.h */,
+				9A2DB17C1A3EC22900923C04 /* JmMovieViewController.m */,
+				9A2DB17E1A3EC27000923C04 /* JmAnimationViewController.h */,
+				9A2DB17F1A3EC27000923C04 /* JmAnimationViewController.m */,
+				9A2DB1811A3EC28800923C04 /* JmVarietyViewController.h */,
+				9A2DB1821A3EC28800923C04 /* JmVarietyViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -191,14 +260,41 @@
 		9A3E4DEA1A31E3FA00BB4F68 /* uiview */ = {
 			isa = PBXGroup;
 			children = (
-				9A67C3331A29668700C1B074 /* TablebarView.h */,
-				9A67C3341A29668700C1B074 /* TablebarView.m */,
-				9ADF12F21A329DBE0047AF52 /* HomePageScrollView.h */,
-				9ADF12F31A329DBE0047AF52 /* HomePageScrollView.m */,
-				9ADF12F51A32A5000047AF52 /* HomePage.h */,
-				9ADF12F61A32A5000047AF52 /* HomePage.m */,
+				9A67C3331A29668700C1B074 /* JmHomePage.h */,
+				9A67C3341A29668700C1B074 /* JmHomePage.m */,
+				9A6CAA8B1A36CEB60048043F /* RecipeCollectionHeaderView.h */,
+				9A6CAA8C1A36CEB70048043F /* RecipeCollectionHeaderView.m */,
+				9A4E3EF91A3EDDA300172645 /* JmNavigationBar.h */,
+				9A4E3EFA1A3EDDA300172645 /* JmNavigationBar.m */,
+				9A3799341A41883500FDAA67 /* JmTV.h */,
+				9A3799351A41883500FDAA67 /* JmTV.m */,
+				9A44AEC61A42C35E0096D0FC /* JmMovie.h */,
+				9A44AEC71A42C35E0096D0FC /* JmMovie.m */,
+				9A44AEC91A42C3A10096D0FC /* JmAnimation.h */,
+				9A44AECA1A42C3A10096D0FC /* JmAnimation.m */,
+				9A44AECC1A42C3BB0096D0FC /* JmVariety.h */,
+				9A44AECD1A42C3BB0096D0FC /* JmVariety.m */,
+				9A72232E1A46721800DA1B6C /* JmSetting.h */,
+				9A72232F1A46721800DA1B6C /* JmSetting.m */,
 			);
 			name = uiview;
+			sourceTree = "<group>";
+		};
+		9AE866021A47FEF8004D88EE /* uiscrollview */ = {
+			isa = PBXGroup;
+			children = (
+				9AE8660E1A480148004D88EE /* photo1.jpg */,
+				9AE8660F1A480148004D88EE /* photo2.jpg */,
+				9AE866101A480148004D88EE /* photo3.jpg */,
+				9AE866111A480148004D88EE /* photo4.jpg */,
+				9AE866061A480136004D88EE /* banner1.png */,
+				9AE866071A480136004D88EE /* banner2.png */,
+				9AE866081A480136004D88EE /* banner3.png */,
+				9AE866091A480136004D88EE /* banner4.png */,
+				9AE866031A47FF4A004D88EE /* SGFocusImageFrame.h */,
+				9AE866041A47FF4A004D88EE /* SGFocusImageFrame.m */,
+			);
+			name = uiscrollview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +373,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5ED7A81A3AD3A80054E149 /* image2.jpg in Resources */,
+				9AE866131A480148004D88EE /* photo2.jpg in Resources */,
+				9A5ED7A71A3AD3A80054E149 /* image1.jpg in Resources */,
+				9AE8660A1A480136004D88EE /* banner1.png in Resources */,
 				9A1E3CBB1A2852DE00C3C4CF /* Images.xcassets in Resources */,
+				9AE866121A480148004D88EE /* photo1.jpg in Resources */,
+				9AE866141A480148004D88EE /* photo3.jpg in Resources */,
+				9AE866151A480148004D88EE /* photo4.jpg in Resources */,
+				9A5ED7A91A3AD3A80054E149 /* image3.jpg in Resources */,
 				9A1E3CAD1A2852DE00C3C4CF /* InfoPlist.strings in Resources */,
+				9AE8660B1A480136004D88EE /* banner2.png in Resources */,
+				9AE8660C1A480136004D88EE /* banner3.png in Resources */,
+				9AE8660D1A480136004D88EE /* banner4.png in Resources */,
 				9A1E3CB61A2852DE00C3C4CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,14 +405,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE866051A47FF4A004D88EE /* SGFocusImageFrame.m in Sources */,
+				9A2DB17D1A3EC22900923C04 /* JmMovieViewController.m in Sources */,
 				9A1E3CB91A2852DE00C3C4CF /* ViewController.m in Sources */,
-				9A67C3351A29668700C1B074 /* TablebarView.m in Sources */,
+				9A67C3351A29668700C1B074 /* JmHomePage.m in Sources */,
+				9A4E3EFB1A3EDDA300172645 /* JmNavigationBar.m in Sources */,
+				9A2DB1771A3EB04200923C04 /* JmSettingViewController.m in Sources */,
+				9A3799361A41883500FDAA67 /* JmTV.m in Sources */,
+				9A2DB17A1A3EC20800923C04 /* JmTVViewController.m in Sources */,
+				9A7223301A46721800DA1B6C /* JmSetting.m in Sources */,
+				9A44AECE1A42C3BB0096D0FC /* JmVariety.m in Sources */,
+				9A44AEC81A42C35E0096D0FC /* JmMovie.m in Sources */,
 				9A1E3CB31A2852DE00C3C4CF /* AppDelegate.m in Sources */,
-				9ADF12F71A32A5000047AF52 /* HomePage.m in Sources */,
+				9A6CAA8D1A36CEB70048043F /* RecipeCollectionHeaderView.m in Sources */,
+				9A2DB1831A3EC28800923C04 /* JmVarietyViewController.m in Sources */,
 				9ACB27F81A31B68700E93A23 /* JmFavouritesViewController.m in Sources */,
+				9A2DB1801A3EC27000923C04 /* JmAnimationViewController.m in Sources */,
 				9ACB27F51A31AC1C00E93A23 /* JmHistoryViewController.m in Sources */,
 				9A1E3CAF1A2852DE00C3C4CF /* main.m in Sources */,
-				9ADF12F41A329DBE0047AF52 /* HomePageScrollView.m in Sources */,
+				9A44AECB1A42C3A10096D0FC /* JmAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

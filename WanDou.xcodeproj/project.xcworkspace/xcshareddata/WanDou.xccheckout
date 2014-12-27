@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9F7F040B-3033-4BBF-A175-55CAEEA66731</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WanDou</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AA33FC9E-3545-40E9-833B-77FC5E2813B7</key>
+		<string>http://github.com/huangxiaotong02/wandouplay.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WanDou.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AA33FC9E-3545-40E9-833B-77FC5E2813B7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://github.com/huangxiaotong02/wandouplay.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AA33FC9E-3545-40E9-833B-77FC5E2813B7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA33FC9E-3545-40E9-833B-77FC5E2813B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WanDou</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -11,5 +11,6 @@
 @interface JmFavouritesViewController : UIViewController
 {
     UINavigationBar *navigationBar;
+//    UIScrollView *m_scrollView;
 }
 @end
