@@ -7,12 +7,11 @@
 //
 
 #import "JmHomePage.h"
+#import "SGFocusImageFrame.h"
 #define STEP 2
 #define buttonwide ([UIScreen mainScreen].bounds.size.width)/STEP
 #define scrollview_hight 420
 #define buttonhight 40
-//#define m_scrollView_y 100
-
 @implementation JmHomePage
 @synthesize delegate;
 
@@ -20,7 +19,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-//        [self creatScrollview];
         // Initialization code
     }
     return self;
@@ -31,6 +29,7 @@
     if (self) {
         [self creatScrollviewButton];
         [self creatScrollerView];
+        [self setupViews:Delegate];
         _scrollView.delegate = Delegate;
         _collectionView.delegate = Delegate;
         _collectionView.dataSource = Delegate;
@@ -43,7 +42,7 @@
 {
     _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, buttonhight, 320, scrollview_hight)];
     _scrollView.contentSize  = CGSizeMake(640, 0);
-    _scrollView.alwaysBounceVertical = NO;
+    _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.pagingEnabled = YES;
     _scrollView.bounces = NO;
     [self addSubview:_scrollView];
@@ -56,10 +55,20 @@
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 320, scrollview_hight) collectionViewLayout:layout];
     _collectionView.backgroundColor = [UIColor whiteColor];
-//    [self setupViews];
     [_scrollView addSubview:_collectionView];
     return _collectionView;
 }
+- (void)setupViews :(id)focusDelegate
+{
+    SGFocusImageItem *item1 = [[SGFocusImageItem alloc] initWithTitle:@"title1" image:[UIImage imageNamed:@"banner1"] tag:0];
+    SGFocusImageItem *item2 = [[SGFocusImageItem alloc] initWithTitle:@"title2" image:[UIImage imageNamed:@"banner2"] tag:1];
+    SGFocusImageItem *item3 = [[SGFocusImageItem alloc] initWithTitle:@"title3" image:[UIImage imageNamed:@"banner3"] tag:2];
+    SGFocusImageItem *item4 = [[SGFocusImageItem alloc] initWithTitle:@"title4" image:[UIImage imageNamed:@"banner4"] tag:4];
+    SGFocusImageFrame *bottomImageFrame = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 5, 320, 100.0) delegate:focusDelegate focusImageItems:item1, item2, item3, item4, nil];
+    bottomImageFrame.autoScrolling = YES;
+    [_collectionView addSubview:bottomImageFrame];
+}
+
 -(UIView *)creatTableView
 {
     m_tableView = [[UITableView alloc]initWithFrame:CGRectMake(320, 0, 320, scrollview_hight) style:UITableViewStylePlain];

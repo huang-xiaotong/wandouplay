@@ -12,13 +12,9 @@
 #import "SGFocusImageFrame.h"
 #define ViewNumber 3
 @interface ViewController : UIViewController
-<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,SGFocusImageFrameDelegate>
+<UICollectionViewDataSource,UICollectionViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,SGFocusImageFrameDelegate,TablebarViewDelegate>
 {
     JmNavigationBar *navigationBar;
-//    UICollectionView *m_collectionView;
-//    UITableView *m_tableView;
-//    UIScrollView *m_scrollView;
     JmHomePage *homePage;
 }
-@property(nonatomic ,strong) UIScrollView * tabbarScrollView;
 @end

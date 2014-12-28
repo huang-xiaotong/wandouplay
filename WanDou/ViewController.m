@@ -25,31 +25,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self getNavigationBar];
-    [self getScrollviewButton];
-//    [self creatScrollerView:self.view];
-    
+    [self getScrollview];
     // Do any additional setup after loading the view, typically from a nib.
 }
-- (void)setupViews
-{
-    SGFocusImageItem *item1 = [[SGFocusImageItem alloc] initWithTitle:@"title1" image:[UIImage imageNamed:@"banner1"] tag:0];
-    SGFocusImageItem *item2 = [[SGFocusImageItem alloc] initWithTitle:@"title2" image:[UIImage imageNamed:@"banner2"] tag:1];
-    SGFocusImageItem *item3 = [[SGFocusImageItem alloc] initWithTitle:@"title3" image:[UIImage imageNamed:@"banner3"] tag:2];
-    SGFocusImageItem *item4 = [[SGFocusImageItem alloc] initWithTitle:@"title4" image:[UIImage imageNamed:@"banner4"] tag:4];
-    
-    SGFocusImageFrame *bottomImageFrame = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100.0) delegate:self focusImageItems:item1, item2, item3, item4, nil];
-    bottomImageFrame.autoScrolling = YES;
-    [homePage.collectionView addSubview:bottomImageFrame];
-    }
 #pragma mark - SGFocusImageFrameDelegate
 
 - (void)foucusImageFrame:(SGFocusImageFrame *)imageFrame didSelectItem:(SGFocusImageItem *)item
 {
-    NSLog(@"%@ tapped", item.title);
-    
-    if (item.tag == 1004) {
-        [imageFrame removeFromSuperview];
-    }
+    NSLog(@"%d",item.tag);
 }
 -(BOOL)getNavigationBar
 {
@@ -88,10 +71,11 @@
     [searchBar resignFirstResponder];                                // 取消第一响应值,键盘回收,搜索结束
     [self getNavigationBar];
 }
--(void)getScrollviewButton
+-(void)getScrollview
 {
     homePage = [[JmHomePage alloc]init:self];
     homePage.frame = CGRectMake(0, 60, 320, self.view.frame.size.height - 60);
+    homePage.delegate = self;
     [self.view addSubview:homePage];
 }
 -(void)tablebarViewDelegate:(NSInteger)tag
@@ -100,12 +84,10 @@
         case 2003:
         {
             homePage.scrollView.contentOffset = CGPointMake(0, 0);
-            NSLog(@"%f",homePage.scrollView.contentOffset.x);
         }
             break;
         case 2004:
         {homePage.scrollView.contentOffset = CGPointMake(320, 0);
-            NSLog(@"%f",homePage.scrollView.contentOffset.x);
 }
             break;
         default:
@@ -113,43 +95,17 @@
     }
     
 }
-
-//-(UIScrollView *)creatScrollerView :(UIView*)view
-//{
-//    m_scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, m_scrollView_y, self.view.bounds.size.width, self.view.bounds.size.height)];
-//    m_scrollView.contentSize  = CGSizeMake(640, 0);
-//    m_scrollView.alwaysBounceVertical = NO;
-//    m_scrollView.pagingEnabled = YES;
-//    m_scrollView.bounces = NO;
-//    m_scrollView.delegate = self;
-//    [view addSubview:m_scrollView];
-//    [self creatTableView];
-//    [self creatCollectionView];
-//    return m_scrollView;
-//}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 {
     homePage.line.frame = CGRectMake(buttonWide * (scrollView.contentOffset.x / 320) + 2.0f , homePage.line.frame.origin.y, buttonWide - 3.0f, homePage.line.frame.size.height);
 }
-//-(UIView*)creatCollectionView
-//{
-//    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-//    m_collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height) collectionViewLayout:layout];
-//    m_collectionView.delegate = self;
-//    m_collectionView.dataSource = self;
-//    m_collectionView.backgroundColor = [UIColor whiteColor];
-//    [self setupViews];
-//    [m_scrollView addSubview:m_collectionView];
-//    return m_collectionView;
-//}
-//
 #pragma mark - Collection View Data Source
 -(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 3;
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (section == 1) {
+    if (section == 0) {
         return 1;
     }
     else
@@ -157,10 +113,14 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0) {
+        return CGSizeMake(320, 100);
+    }
     return CGSizeMake(150, 190);
 }
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
+    
     return UIEdgeInsetsMake(5, 5, 5, 5);
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -184,17 +144,13 @@
 }
 //返回头headerView的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        CGSize size={0,0};
+        return size;
+    }
     CGSize size={320,30};
     return size;
 }
-//-(UIView *)creatTableView
-//{
-//    m_tableView = [[UITableView alloc]initWithFrame:CGRectMake(320, 0, 320, self.view.frame.size.height) style:UITableViewStylePlain];
-//    m_tableView.delegate = self;
-//    m_tableView.dataSource = self;
-//    [m_scrollView addSubview:m_tableView];
-//    return m_tableView;
-//}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 110.0f;

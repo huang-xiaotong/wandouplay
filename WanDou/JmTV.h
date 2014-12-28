@@ -12,7 +12,6 @@
 @end
 @interface JmTV : UIView
 {
-    id viewDelegate;
 }
 @property(nonatomic ,strong) id<TablebarViewDelegate>delegate;
 @property (nonatomic, strong) UITableView *classifyTableview;
@@ -24,5 +23,4 @@
 @property (nonatomic, strong) UIScrollView *scrollViewButton;
 @property (nonatomic, strong) UIView *line;
 -(id)init :(id)viewdelegate;
-- (void)showLineWithButtonWidth:(CGFloat)width;
 @end

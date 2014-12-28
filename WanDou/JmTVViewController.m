@@ -14,9 +14,7 @@
 #import "RecipeCollectionHeaderView.h"
 #define buttonWide 80
 @interface JmTVViewController ()
-
 <UIScrollViewDelegate,TablebarViewDelegate>
-
 @end
 
 @implementation JmTVViewController

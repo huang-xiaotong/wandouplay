@@ -57,8 +57,6 @@
 {
     _classifyTableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, view_hight) style:UITableViewStylePlain];
     _classifyTableview.backgroundColor = [UIColor redColor];
-    _classifyTableview.delegate = viewDelegate;
-    _classifyTableview.dataSource = viewDelegate;
     [_scrollView addSubview:_classifyTableview];
     return _classifyTableview;
 }
